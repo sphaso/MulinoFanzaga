@@ -1,9 +1,13 @@
 var app = angular.module('mulinoApp', ['ui.router', 'ngTouch']);
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
-	$urlRouterProvider.when('', 'obiettivi');
+	$urlRouterProvider.when('', 'news');
 
 	$stateProvider
+		.state('news', {
+			url: '/news',
+			templateUrl: 'news/news.html'
+		})
 		.state('obiettivi', {
 			url: '/obiettivi',
 			templateUrl: 'obiettivi/obiettivi.html'
@@ -21,6 +25,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
 app.controller('parentController', ['$scope', '$state', function($scope, $state) {
 	var stateList = [
+		"news",
 		"obiettivi",
 		"mulino",
 		"gallery"
