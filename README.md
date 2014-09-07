@@ -1,4 +1,4 @@
 MulinoFanzaga
 =============
 
-WebSite for the Mulino Fanzaga cause
+Website for the Mulino Fanzaga cause

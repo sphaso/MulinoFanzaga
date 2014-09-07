@@ -1,0 +1,15 @@
+<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryLabel" aria-hidden="true">
+	<div class="modal-dialog fullScreen" ng-swipe-right="swipeImg(-1)" ng-swipe-left="swipeImg(1)">
+		<div class="modal-content transparent-modal">
+			<div class="modal-body">
+				<img class="img-responsive img-center" ng-src="gallery/img/{{bigImage}}" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="gallery" class="row" ng-swipe-left="swipeTo(-1)" ng-swipe-right="swipeTo(1)">
+	<ul ng-repeat="image in images">
+		<li class="col-xs-3 col-sm-3 col-md-2 col-lg-2"><img class="img-responsive" ng-src="gallery/thumb/TN_{{image}}" data-toggle="modal" data-target="#galleryModal" ng-click="showOff($index)" /></li>
+	</ul>
+</div>
