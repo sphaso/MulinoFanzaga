@@ -39,6 +39,27 @@ html {
 	box-shadow:0 0 0 rgba(256,256,256,0);
 }
 
+.arrows {
+	cursor: pointer;
+}
+
+.alert-dialog-close {
+  position: relative;
+  top: -2px;
+  color: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
 .img-center {
 	margin:0 auto;
 }

@@ -2,7 +2,16 @@
 	<div class="modal-dialog fullScreen" ng-swipe-right="swipeImg(-1)" ng-swipe-left="swipeImg(1)">
 		<div class="modal-content transparent-modal">
 			<div class="modal-body">
-				<img class="img-responsive img-center" ng-src="{{folder.folder}}/img/{{bigImage}}" />
+				<div class="row">
+					<div class="col-xs-6 col-xs-push-5">
+						<span class="text-center hidden-xs"><span class="glyphicon glyphicon-chevron-left arrows col-xs-1" ng-click="swipeImg(-1)" /></span>
+						<button type="button" class="alert-dialog-close col-xs-1" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<span class="text-center hidden-xs"><span class="glyphicon glyphicon-chevron-right arrows col-xs-1" ng-click="swipeImg(1)"/></span>
+					</div>
+				</div>
+				<div class="row">
+					<img class="img-responsive img-center" ng-src="{{folder.folder}}/img/{{bigImage}}"/>
+				</div>
 			</div>
 		</div>
 	</div>
