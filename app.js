@@ -64,10 +64,9 @@ app.directive('gallery', function(){
 			};
 
 			window.onhashchange = function() {
+				$('.modal-backdrop').remove();
 				window.history.forward();
 			    $scope.hideDialog();
- 
-			    $('.modal-backdrop').remove();
 			};
 		}
 	}
