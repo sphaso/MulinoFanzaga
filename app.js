@@ -49,6 +49,7 @@ app.directive('gallery', function(){
 
 			$scope.showOff = function(index){
 				$scope.bigImage = $scope.images[index];
+				console.log($scope.bigImage);
 			};
 
 			$scope.swipeImg = function(sum) {

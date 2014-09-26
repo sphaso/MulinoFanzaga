@@ -18,7 +18,7 @@
 </div>
 
 <div id="gallery" class="row">
-	<ul ng-repeat="image in images">
-		<li class="col-xs-3 col-md-2"><img class="img-responsive" ng-src="{{folder.folder}}/thumb/TN_{{image}}" data-toggle="modal" data-target="#galleryModal" ng-click="showOff($index)" /></li>
+	<ul>
+		<li ng-repeat="image in images" class="col-xs-3 col-md-2"><img class="img-responsive" ng-src="{{folder.folder}}/thumb/TN_{{image}}" data-toggle="modal" data-target="#galleryModal" ng-click="showOff($index)" /></li>
 	</ul>
 </div>
